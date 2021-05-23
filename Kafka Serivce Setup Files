@@ -1,2 +1,18 @@
 Kafka Service 
 Ubuntu> sudo nano /etc/systemd/system/kafka.service
+
+[Unit]
+##if you use below lines then make sure you start zookeeper service first and then kafka.
+#Requires=zookeeper.service
+#After=zookeeper.service
+
+[Service]
+Type=simple
+User=data
+ExecStart=/bin/sh -c '/opt/kafka/bin/kafka-server-start.sh /opt/kafka/config/server.properties > /opt/kafka/logs/kafka.log 2>&1'
+Restart=on-abnormal
+
+[Install]
+WantedBy=multi-user.target
+
+
