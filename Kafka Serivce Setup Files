@@ -1,0 +1,2 @@
+Kafka Service 
+Ubuntu> sudo nano /etc/systemd/system/kafka.service
