@@ -6,7 +6,7 @@
 spark-submit <name of the pyspark program specific to use case that you wish to implement, below is sample code for wordcount>
 # Push output of above program to S3 data lake using below code
 
-aws s3 cp buyerdata.csv s3://commerce-datalake
+aws s3 cp aws s3 cp <Output file generated from program above> s3://commerce-datalake s3://commerce-datalake
 
 #Invoke SSH to Ubuntu (Seller machine) for Kafka producer job
 HOST='<IP address of Ubuntu machine which is generated due to OpenVpn, you can find it from ifconfig command e.g. 10.8.0.3'
