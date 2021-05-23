@@ -1,4 +1,4 @@
-# This code goes into Ubuntu (Seller Machine). 
+# This code goes on Ubuntu (Seller machine). Pl. make sure to have python and below libraries installed. You can refer to google for help to install those.
 import os, sys
 #You can capture logged in user by using $USER and similarly email and phone details from database in real time scenario. For demo , we are hardcoding it to below details.
 #str = os.system('echo "$USER"')
